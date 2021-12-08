@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Budgect Planner App</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.js";>
+
+    </head>
+    <body style="background-color: grey;">
+        <h2>Team Budget Planner</h2>
+        <script>
+            var arr={}
+            function addDetails() {
+            var product=prompt("Enter the Product Name : ")
+            var price=prompt("Enter the Price of "+product+" : ")
+            arr[product]=price // arr={product:price}
+            }
+    function checkDetails() {
+        console.log(arr)
+        console.log(Object.values(arr)) //load values from array
+        var res=Object.values(arr)
+        var totalBudget=0 // calculate the total budget
+        for (let i=0;i<res.length;i++) {
+            var num=parseFloat(res[i])
+            totalBudget+=num
+        }
+        console.log("Total Budget is : "+totalBudget+" Rs") // display total budget
+        document.write("Total Budget is : "+totalBudget+" Rs")
+    }
+    </script>
+    <button  class="buttonmystyle"onclick="addDetails()">Add Details</button> <button onclick="checkDetails()">Check Details</button>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+</html>
+
+
