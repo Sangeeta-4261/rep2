@@ -1,0 +1,23 @@
+body {
+    background-color:rgb(48, 63, 66); 
+    color: rgb(245, 243, 243);
+}
+.header{
+    font-size: 60px; 
+    padding: 10px;
+}
+.carousel-inner{
+    height: 300px;
+}
+
+#close, .modal-header{
+    color: black;
+}
+#username, #article{
+    color: black;
+    margin-bottom: 10px;
+}
+#clickBtn{
+    font-size: 30px;
+    margin: 50px 500px;
+}
